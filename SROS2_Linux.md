@@ -126,13 +126,13 @@ Then use the CLI with `--no-daemon` and `--spin-time`:
 > Avoid using `ros2 daemon` since it may not have security enclaves, and enough time duration should be given for the discovery in secured network.
 
 ```bash
-ros2 node list --no-daemon --spin-time 3
+ros2 node list --no-daemon --spin-time 4
 ```
 ```
 /talker
 ```
 ```bash
-ros2 topic list --no-daemon --spin-time 3
+ros2 topic list --no-daemon --spin-time 4
 ```
 ```
 /chatter
@@ -140,7 +140,7 @@ ros2 topic list --no-daemon --spin-time 3
 /rosout
 ```
 ```bash
-ros2 topic echo /chatter --spin-time 3
+ros2 topic echo /chatter --spin-time 4
 ```
 ```
 [INFO] [1714897092.882384995] [rcl]: Found security directory: /root/sros2_demo/demo_keystore/enclaves/talker_listener/listener
